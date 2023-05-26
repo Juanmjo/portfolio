@@ -29,7 +29,7 @@ html {
 }
 
 .container-header header .logo a {
-  font-family: "Impact";
+  font-family: "Quicksand";
   font-size: 36px;
   color: #1cb698;
   text-decoration: none;
@@ -123,4 +123,124 @@ html {
 
 .start .container-banner .networks a:hover {
   background-color: #1cb698;
+}
+
+.aboutme {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.aboutme .container-section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.aboutme h2 {
+  font-size: 48px;
+  font-family: "Impact";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.aboutme .container-section p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.aboutme .container-section p span {
+  color: #1cb698;
+  font-weight: bold;
+}
+
+.aboutme .row {
+  display: flex;
+}
+
+.aboutme .row .col {
+  width: 50%;
+}
+
+.aboutme .row .col h3 {
+  font-size: 28px;
+  font-family: "Impact";
+  margin-bottom: 25px;
+}
+
+.aboutme .row .col ul {
+  list-style: none;
+}
+
+.aboutme .row .col ul li {
+  margin: 12px 0;
+}
+
+.aboutme .row .col ul li strong {
+  display: inline-block;
+  color: #1cb698;
+  width: 130px;
+}
+
+.aboutme .row .col ul li span {
+  background-color: #1cb698;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.aboutme .row .col .container-interests {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutme .row .col .container-interests .hobby {
+  width: 100px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.aboutme .row .col .container-interests .hobby:hover {
+  background-color: #1cb698;
+}
+
+.aboutme .row .col .container-interests .hobby i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.aboutme button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+}
+
+.aboutme button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.aboutme button:hover .overlay {
+  width: 100%;
 }
