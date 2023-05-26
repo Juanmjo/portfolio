@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* SECTION HEADER */
 .container-header {
   background-color: #1e2326;
   position: fixed;
@@ -18,7 +19,6 @@ html {
   left: 0;
   z-index: 99;
 }
-
 .container-header header {
   max-width: 1100px;
   margin: auto;
@@ -27,19 +27,16 @@ html {
   align-items: center;
   padding: 15px 20px;
 }
-
 .container-header header .logo a {
   font-family: "Quicksand";
   font-size: 36px;
   color: #1cb698;
   text-decoration: none;
 }
-
 .container-header header ul {
   display: flex;
   list-style: none;
 }
-
 .container-header header nav ul li a {
   text-align: none;
   color: #fff;
@@ -48,11 +45,9 @@ html {
   transition: 0.5s;
   text-decoration: none;
 }
-
 .container-header header nav ul li a:hover {
   color: #1cb698;
 }
-
 .nav-responsive {
   background-color: #1cb698;
   color: #fff;
@@ -62,7 +57,7 @@ html {
   display: none;
 }
 
-/*Section Start*/
+/* SECTION START  */
 .start {
   background-image: linear-gradient(
       to top,
@@ -76,7 +71,6 @@ html {
   display: flex;
   align-items: center;
 }
-
 .start .container-banner {
   padding: 20px;
   background-color: #1e2326;
@@ -86,7 +80,6 @@ html {
   text-align: center;
   border-radius: 40px;
 }
-
 .start .container-banner img {
   margin-top: 40px;
   border: 10px solid #1cb698;
@@ -95,18 +88,15 @@ html {
   margin: auto;
   border-radius: 100%;
 }
-
 .start .container-banner h1 {
   margin-top: 40px;
   font-size: 42px;
   font-family: "Impact";
 }
-
 .start .container-banner h2 {
   font-size: 15px;
   font-weight: normal;
 }
-
 .start .container-banner .networks a {
   color: #fff;
   display: inline-block;
@@ -120,80 +110,67 @@ html {
   font-size: 20px;
   transition: 0.3s;
 }
-
 .start .container-banner .networks a:hover {
   background-color: #1cb698;
 }
 
+/* SECTION ABOUT ME */
 .aboutme {
   background-color: #1e2326;
   color: #fff;
   padding: 50px 20px;
 }
-
 .aboutme .container-section {
   max-width: 1100px;
   margin: auto;
 }
-
 .aboutme h2 {
   font-size: 48px;
   font-family: "Impact";
   text-align: center;
   padding: 20px 0;
 }
-
 .aboutme .container-section p {
   font: 18px;
   line-height: 22px;
   margin-bottom: 20px;
 }
-
 .aboutme .container-section p span {
   color: #1cb698;
   font-weight: bold;
 }
-
 .aboutme .row {
   display: flex;
 }
-
 .aboutme .row .col {
   width: 50%;
 }
-
 .aboutme .row .col h3 {
   font-size: 28px;
   font-family: "Impact";
   margin-bottom: 25px;
 }
-
 .aboutme .row .col ul {
   list-style: none;
 }
-
 .aboutme .row .col ul li {
   margin: 12px 0;
 }
-
 .aboutme .row .col ul li strong {
   display: inline-block;
   color: #1cb698;
   width: 130px;
 }
-
 .aboutme .row .col ul li span {
   background-color: #1cb698;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
 }
-
 .aboutme .row .col .container-interests {
   display: flex;
   flex-wrap: wrap;
 }
-
 .aboutme .row .col .container-interests .hobby {
   width: 100px;
   height: 100px;
@@ -206,16 +183,13 @@ html {
   justify-content: center;
   transition: 0.3s;
 }
-
 .aboutme .row .col .container-interests .hobby:hover {
   background-color: #1cb698;
 }
-
 .aboutme .row .col .container-interests .hobby i {
   font-size: 30px;
   margin-bottom: 10px;
 }
-
 .aboutme button {
   cursor: pointer;
   background-color: transparent;
@@ -229,7 +203,6 @@ html {
   z-index: 10;
   padding: 20px;
 }
-
 .aboutme button .overlay {
   position: absolute;
   top: 0;
@@ -240,7 +213,78 @@ html {
   z-index: -1;
   transition: 0.3s;
 }
-
 .aboutme button:hover .overlay {
   width: 100%;
+}
+
+/* SECTION SKILLS */
+.skills {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
+}
+.skills .container-section {
+  max-width: 1100px;
+  margin: auto;
+}
+.skills h2 {
+  font-size: 48px;
+  font-family: "Impact";
+  text-align: center;
+  padding: 20px 0;
+}
+.skills .row {
+  display: flex;
+}
+.skills .row .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.skills .row .col h3 {
+  font-size: 28px;
+  font-family: "Impact";
+  margin-bottom: 25px;
+}
+.skills .skill > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.skills .skill .bar-skill {
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skills .skill .progress {
+  background-color: #1cb698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+.skills .skill .bar-skill span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1cb698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+.skills .skill .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
 }
