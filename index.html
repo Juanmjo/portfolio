@@ -17,15 +17,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#start">START</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACTO</a></li>
+                    <li><a href="#start" onclick="select()">START</a></li>
+                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="select()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="showHideMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -140,18 +140,18 @@
                 <div class="col">
                     <h3>Technical Skills</h3>
                     <div class="skill">
-                        <span>HTML & CSS</span>
+                        <span>JavaScript</span>
                         <div class="bar-skill">
-                            <div class="progress">
-                                <span>65%</span>
+                            <div class="progress javascript">
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>JavaScript</span>
+                        <span>HTML & CSS</span>
                         <div class="bar-skill">
                             <div class="progress">
-                                <span>70%</span>
+                                <span>65%</span>
                             </div>
                         </div>
                     </div>
@@ -367,5 +367,7 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
