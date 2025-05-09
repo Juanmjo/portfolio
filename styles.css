@@ -114,6 +114,15 @@ html {
   background-color: #1cb698;
 }
 
+.container-img img {
+  width: 300px; /* ajusta el tamaño según necesites */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #1abc9c; /* color similar al borde en la imagen */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
 /* SECTION ABOUT ME */
 .aboutme {
   background-color: #1e2326;
